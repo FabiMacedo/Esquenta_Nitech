@@ -15,10 +15,13 @@ public class EsquentaNitech {
         String nomeSituacao = null;
 
         //Mensagem de Boas-vindas
-        JOptionPane.showMessageDialog(null, "Olá!\nBem-vindo ao Sistema de reajuste de preços.");
+        JOptionPane.showMessageDialog(null, "Olá!\nBem-vindo ao Sistema Cadastro de Produtos.");
 
         //Entrada do usuário com o nome do produto
         String nome = JOptionPane.showInputDialog("Informe o nome do produto:");
+
+        //Entrada do usuário com o código do produto
+        int codProduto = Integer.parseInt(JOptionPane.showInputDialog("Informe o código do produto"));
 
         //Entrada do usuário com o preço do produto
         double preco = Double.parseDouble(JOptionPane.showInputDialog("Informe o preço do produto R$:"));
@@ -94,14 +97,15 @@ public class EsquentaNitech {
 
         //Status do produto e suas alterações
         JOptionPane.showMessageDialog(null, "               STATUS DO PRODUTO\n"+
-            "\nNome do produto:     "+nome+
-            "\nPreço do produto R$: "+preco+
-            "\nCategoria:           "+nomeCategoria+
-            "\nSituação do Produto: "+nomeSituacao+
-            "\nValor do aumento R$: "+aumento+
-            "\nValor do imposto R$: "+imposto+
-            "\nPreço atualizado R$: "+novoPreco+
-            "\nClassificação:       "+classificacao);
+            "\nNome do produto:     "+ nome +
+            "\nCódigo do produto:   "+ codProduto +
+            "\nPreço do produto R$: "+ preco +
+            "\nCategoria:           "+ nomeCategoria +
+            "\nSituação do Produto: "+ nomeSituacao +
+            "\nValor do aumento R$: "+ aumento +
+            "\nValor do imposto R$: "+ imposto +
+            "\nPreço atualizado R$: "+ novoPreco +
+            "\nClassificação:       "+ classificacao);
     }
 
 }

@@ -3,9 +3,9 @@
  
 O projeto foi desenvolvido na linguagem Java por Fabiana Macedo.
 O projeto é um programa que recebe as informações:
-- Nome, categoria e situação de um produto.
+- Código, nome, preço, categoria e situação de um produto.
 - Calcula o valor do aumento e de impostos usando as regras do negócio.
-- E conforme for o resultado do preço final, exibe uma classificação.
+- E conforme for o resultado do preço final, o usuário recebe um percentual de desconto.
 - No final o programa exibe um status com todas as informações referente ao produto.
 
 ### Para abrir o projeto no InteliJ IDEA:
